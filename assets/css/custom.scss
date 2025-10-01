@@ -1,0 +1,43 @@
+---
+---
+
+/* Dark pastel security vibe */
+$brand-color: #e75480;       /* pink */
+$link-color: #a259ff;        /* purple */
+$link-color-hover: #ff914d;  /* orange */
+$text-color: #f0f0f0;        /* light grey for readability */
+$background-color: #0b1d3a;  /* deep dark blue */
+
+/* Import Minimal Mistakes base theme */
+@import "minimal-mistakes/skins/air";
+@import "minimal-mistakes";
+
+/* Custom site tweaks */
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.site-title a {
+  color: $brand-color !important;
+}
+
+a {
+  font-weight: bold;
+  color: $link-color;
+}
+
+a:hover {
+  color: $link-color-hover;
+}
+
+.page__footer {
+  background: linear-gradient(90deg, #e75480, #a259ff, #ff914d);
+  color: white;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3 {
+  color: $brand-color;  /* make headings pop in pink */
+}
