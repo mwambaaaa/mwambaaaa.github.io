@@ -13,7 +13,8 @@ permalink: /about/
   <img src="{{ '/assets/images/profile-photo.jpg' | relative_url }}" alt="Happy" class="profile-photo">
   <p>Hello! I’m Happy, a Junior Cloud Security Engineer learning AWS, cloud, security and everything in between. I’m a girl finding my path in cloud security, learning AWS step by step. I don’t have all the answers yet, but I believe in showing the process — the wins, the mistakes, and the lessons in between.
 
-    I started this journey after a few missteps — like locking myself out of my AWS root account — and I’m sharing my lessons to help others avoid the same pitfalls.</p>
+    I started this journey after a few missteps — like locking myself out of my AWS root account — and I’m sharing my lessons to help others avoid the same pitfalls.
+  </p>
 </div>
 
 <div class="fade-in-section">

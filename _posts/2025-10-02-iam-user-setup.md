@@ -12,7 +12,6 @@ After I locked myself out of my AWS root account, the first piece of advice I go
 
 Here’s a step-by-step guide to creating an IAM user and signing in with it.
 
----
 
 ## Step 1: Sign in as root one last time
 Use your root email and password to log into AWS. Head to the **IAM** service in the console.  
@@ -20,7 +19,6 @@ Use your root email and password to log into AWS. Head to the **IAM** service in
 ![AWS Console Home](/assets/images/iam/console-home.png)  
 *The AWS Console home page, signed in as root.*
 
----
 
 ## Step 2: Create an Administrators group
 - Go to **Groups → Create group**.  
@@ -30,8 +28,6 @@ Use your root email and password to log into AWS. Head to the **IAM** service in
 ![Create Group](/assets/images/iam/create-group.png)  
 *Creating the Administrators group and attaching AdministratorAccess.*
 
----
-
 ## Step 3: Create your IAM user
 - **Users → Add user**.  
 - Username: `happy-admin` (or something meaningful).  
@@ -40,15 +36,11 @@ Use your root email and password to log into AWS. Head to the **IAM** service in
 ![Add IAM User](/assets/images/iam/add-user.png)  
 *Adding a new IAM user with console access.*
 
----
-
 ## Step 4: Add the user to your group
 On the permissions page, add your new user into the `Administrators` group.  
 
 ![Add User to Group](/assets/images/iam/add-user-to-group.png)  
 *Assigning the user to the Administrators group.*
-
----
 
 ## Step 5: Enable MFA
 - Open your IAM user → **Security credentials** → **Manage MFA**.  
@@ -56,8 +48,6 @@ On the permissions page, add your new user into the `Administrators` group.
 
 ![Enable MFA](/assets/images/iam/enable-mfa.png)  
 *Enabling MFA for the IAM user.*
-
----
 
 ## Step 6: Create an account alias
 - IAM → **Account settings → Create account alias**.  

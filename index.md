@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome
+title: Welcome to My Cloud Journey
 ---
 
 <div class="landing-intro fade-in-section">
