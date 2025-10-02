@@ -3,11 +3,17 @@
   {% include head.html %}
   <body>
     <header>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/about/' | relative_url }}">About</a>
-        <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      </nav>
+        <div class="header-top">
+          <img src="{{ '/assets/images/header-photo.jpg' | relative_url }}" alt="Happy's AWS Journey" class="header-photo">
+          <nav class="breadcrumbs">
+            <a href="{{ '/' | relative_url }}">Home</a> / <a href="{{ '/blog/' | relative_url }}">Blog</a> / {{ page.title }}
+          </nav>
+        </div>
+        <nav class="main-nav">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/about/' | relative_url }}">About</a>
+          <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        </nav>
     </header>
 
   <main class="content">
