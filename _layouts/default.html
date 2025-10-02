@@ -11,8 +11,6 @@
     <a href="{{ '/' | relative_url }}">Home</a>
     <a href="{{ '/about/' | relative_url }}">About</a>
     <a href="{{ '/blog/' | relative_url }}">Blog</a>
-    <a href="{{ '/categories/' | relative_url }}">Categories</a>
-    <a href="{{ '/tags/' | relative_url }}">Tags</a>
   </nav>
 
   <main class="content">
@@ -20,8 +18,7 @@
   </main>
 
   <footer>
-    <p>© {{ site.time | date: '%Y' }} {{ site.author }} · Built with Jekyll</p>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }} {{ site.title }}</p>
   </footer>
 </body>
 </html>
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">

@@ -1,10 +1,8 @@
 ---
-layout: single
+layout: post
 title: "How I Locked Myself Out of AWS (and What I Learned About Root Accounts)"
 date: 2025-10-01
-categories: [AWS]
-tags: [root-user, IAM, MFA, beginner, lesson-learned]
-author: Happy
+author: Happyness Mwamba
 description: "A personal story about losing access to my AWS root account, and why you should create IAM users from day one."
 ---
 

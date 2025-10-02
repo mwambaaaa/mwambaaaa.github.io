@@ -1,11 +1,29 @@
 ---
-layout: default
+# no layout front matter needed
 ---
 
-<article class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  <div class="page-content">
-    {{ content }}
-  </div>
-</article>
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+{% include head.html %}
+
+<body>
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <article>
+      <h1>{{ page.title }}</h1>
+      <p class="post-matter">
+        {{ page.date }}{% if page.author %} by {{ page.author }}{% endif %}
+      </p>
+      {{ content }}
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.author }} - {{ site.title }}</p>
+  </footer>
+</body>

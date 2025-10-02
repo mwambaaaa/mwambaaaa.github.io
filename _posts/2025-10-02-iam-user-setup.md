@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "Create an IAM User, Step by Step (Stop Using the Root Account)"
 date: 2025-10-02
 author: Happyness Mwamba
