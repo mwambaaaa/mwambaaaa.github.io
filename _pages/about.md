@@ -1,6 +1,9 @@
 ---
-permalink: /about/
+
+layout: default
 title: "About"
+permalink: /about/
+
 ---
 
 ![Happy](/assets/images/profile.jpg){: .profile-pic}

@@ -1,9 +1,11 @@
 ---
+
 layout: post
 title: "Create an IAM User, Step by Step (Stop Using the Root Account)"
 date: 2025-10-02
 author: Happyness Mwamba
 description: "A beginner-friendly guide to creating an IAM user, enabling MFA, and setting up your account for safe daily use."
+
 ---
 
 After I locked myself out of my AWS root account, the first piece of advice I got was: *don’t use root for daily work*. The fix is to create an **IAM user**. This is your everyday login, protected with MFA, while root stays tucked away for emergencies.

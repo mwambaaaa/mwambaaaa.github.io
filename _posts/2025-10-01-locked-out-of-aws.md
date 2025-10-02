@@ -1,9 +1,11 @@
 ---
+
 layout: post
 title: "How I Locked Myself Out of AWS (and What I Learned About Root Accounts)"
 date: 2025-10-01
 author: Happyness Mwamba
 description: "A personal story about losing access to my AWS root account, and why you should create IAM users from day one."
+
 ---
 
 When I first opened my AWS account, I had no idea what IAM was. I signed in with my root email and thought that was normal. Then I made the mistake that locked me out for months: I lost access to my MFA device.
