@@ -80,3 +80,28 @@ pre, code {
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: sans-serif;
+}
+
+main.content {
+  flex: 1; /* takes up remaining space, pushes footer down */
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: darken($bg-color, 10%);
+}
