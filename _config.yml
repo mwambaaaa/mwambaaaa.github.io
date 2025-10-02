@@ -14,20 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 layout: single
-title: How I Locked Myself Out of AWS
+title: Cloud Security
 date: 01-10-2025
-categories: AWS Security
+categories: Cloud Security
 name: Happyness Mwamba
-description: >- # this means to ignore newlines until "baseurl:"
-  I lost access to my AWS account for months after mismanaging my root account and MFA. Here's what went wrong, and how using IAM users prevents this from happenning to you.
-twitter_username: _minibutmighty_
-github_username: mwambaaaa
-minimal_mistakes_skin: air
-search: true
+
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: pages-themes/minimal@v0.2.0
+minimal_mistakes_skin: air
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -36,6 +33,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - assets/css
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -51,6 +49,7 @@ include:
 
 # Plugins (previously gems:)
 plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -60,7 +59,7 @@ plugins:
 
 author:
   name   : "Happyness Mwamba"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/profile.jpg"
   bio    : "AWS Cloud Engineer | Just a girl building her AWS security portfolio."
   links:
     - label: "Website"
