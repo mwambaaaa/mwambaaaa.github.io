@@ -3,6 +3,9 @@ permalink: /about/
 title: "About"
 ---
 
+![Happy](/assets/images/profile.jpg){: .profile-pic}
+
+
 Hi, I’m Happy 🌸  
 
 I’m a girl finding my path in cloud security, learning AWS step by step. I don’t have all the answers yet, but I believe in showing the process — the wins, the mistakes, and the lessons in between.  

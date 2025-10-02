@@ -1,43 +1,82 @@
 ---
 ---
 
-/* Dark pastel security vibe */
-$brand-color: #e75480;       /* pink */
-$link-color: #a259ff;        /* purple */
-$link-color-hover: #ff914d;  /* orange */
-$text-color: #f0f0f0;        /* light grey for readability */
-$background-color: #0b1d3a;  /* deep dark blue */
+/* 🎨 Happy’s custom colour palette */
+$bg-color: #0b0c10;     // dark navy background
+$text-color: #f8f8f8;   // light text
+$link-color: #ff6ec7;   // bright pink
+$link-hover: #ffb347;   // warm orange hover
+$header-color: #b19cd9; // soft purple for headings
+$code-color: #39ff14;   // hacker green for code
 
-/* Import Minimal Mistakes base theme */
-@import "minimal-mistakes/skins/air";
-@import "minimal-mistakes";
-
-/* Custom site tweaks */
+/* Base page styling */
 body {
-  background-color: $background-color;
+  background-color: $bg-color;
   color: $text-color;
-}
-
-.site-title a {
-  color: $brand-color !important;
-}
-
-a {
-  font-weight: bold;
-  color: $link-color;
+  font-family: 'Fira Code', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 a:hover {
-  color: $link-color-hover;
+  color: $link-hover;
 }
 
-.page__footer {
-  background: linear-gradient(90deg, #e75480, #a259ff, #ff914d);
-  color: white;
+/* Headers */
+h1, h2, h3, h4 {
+  color: $header-color;
+  text-transform: uppercase;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
 }
 
-.page__content h1,
-.page__content h2,
-.page__content h3 {
-  color: $brand-color;  /* make headings pop in pink */
+/* Navigation bar */
+nav {
+  background-color: darken($bg-color, 5%);
+  border-bottom: 2px solid $link-color;
+  padding: 0.5em;
+}
+nav a {
+  color: $link-color;
+  padding: 0.5em;
+}
+nav a:hover {
+  color: $link-hover;
+}
+
+/* Code blocks */
+pre, code {
+  background: darken($bg-color, 10%);
+  color: $code-color;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+/* Profile photo styling */
+.profile-pic {
+  display: block;
+  margin: 2em auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid $link-color;
+  box-shadow: 0 0 20px rgba(255, 110, 199, 0.6);
+  object-fit: cover;
+}
+
+/* Blog post cards / entries */
+.post {
+  background: darken($bg-color, 5%);
+  padding: 1.5em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.post-title {
+  color: $header-color;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }

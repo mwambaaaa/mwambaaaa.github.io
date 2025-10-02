@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  {% include head.html %}
+</head>
+<body>
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/blog/' | relative_url }}">Blog</a>
+    <a href="{{ '/categories/' | relative_url }}">Categories</a>
+    <a href="{{ '/tags/' | relative_url }}">Tags</a>
+  </nav>
+
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© {{ site.time | date: '%Y' }} {{ site.author }} · Built with Jekyll</p>
+  </footer>
+</body>
+</html>
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
