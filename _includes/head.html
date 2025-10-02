@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,5 +11,39 @@
   <!-- Link to your main stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="{{'/assets/js/custom.js'| relative_url}}"></script>
 </head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <img src="{{ '/assets/images/header-photo.jpg' | relative_url }}" alt="Happy" class="header-photo">
+
+      {% unless page.url == "/" %}
+      <div class="breadcrumbs">
+        {{ page.breadcrumbs }}
+      </div>
+      {% endunless %}
+    </div>
+
+    <nav class="main-nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about' | relative_url }}">About</a>
+      <a href="{{ '/blog' | relative_url }}">Blog</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+</body>
+</html>
