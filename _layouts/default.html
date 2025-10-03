@@ -2,26 +2,36 @@
 <html lang="en">
   {% include head.html %}
   <body>
+    <!-- HEADER -->
     <header>
-        <div class="header-top">
-          <img src="{{ '/assets/images/header-photo.jpg' | relative_url }}" alt="Happy's AWS Journey" class="header-photo">
-          <nav class="breadcrumbs">
-            <a href="{{ '/' | relative_url }}">Home</a> / <a href="{{ '/blog/' | relative_url }}">Blog</a> / {{ page.title }}
-          </nav>
+      <div class="header-top">
+        <img src="{{ '/assets/images/header-photo.jpg' | relative_url }}" alt="Happy" class="header-photo">
+
+        {% unless page.url == "/" %}
+        <div class="breadcrumbs">
+          {{ page.breadcrumbs }}
         </div>
-        <nav class="main-nav">
-          <a href="{{ '/' | relative_url }}">Home</a>
-          <a href="{{ '/about/' | relative_url }}">About</a>
-          <a href="{{ '/blog/' | relative_url }}">Blog</a>
-        </nav>
+        {% endunless %}
+      </div>
+
+      <nav class="main-nav">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about' | relative_url }}">About</a>
+        <a href="{{ '/blog' | relative_url }}">Blog</a>
+      </nav>
     </header>
 
-  <main class="content">
-    {{ content }}
-  </main>
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      {{ content }}
+    </main>
 
-  <footer>
-    <p>&copy; {{ site.author }}  {{ site.title }}</p>
-  </footer>
-</body>
+    <!-- FOOTER -->
+    <footer>
+      &copy; {{ site.author | date: "%Y" }} {{ site.title }}. All rights reserved.
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+  </body>
 </html>
